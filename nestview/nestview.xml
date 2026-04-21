@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Name>Nestview</Name>
+  <Repository>ghcr.io/kylejschultz/nestview:latest</Repository>
+  <Registry>https://github.com/kylejschultz/nestview/pkgs/container/nestview</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/XXXXX-support-nestview/</Support>
+  <Project>https://github.com/kylejschultz/nestview</Project>
+  <Overview>
+    Nestview is a lightweight, self-hosted Docker visibility and health tool for homelabbers. Zero-config autodiscovery of all running containers, a health dashboard, searchable log history, per-container CPU/memory/network stats, Discord alerting, and image update awareness — all from a single container with no manual service configuration required.[br][br]
+    [b]Default port:[/b] 8484[br]
+    [b]First run:[/b] A setup wizard will guide you through creating your admin account.[br][br]
+    [b]Documentation:[/b] https://github.com/kylejschultz/nestview[br]
+    [b]Discord:[/b] https://discord.gg/TfQ8QX3Ptr
+  </Overview>
+  <Category>Tools: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8484]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/kylejschultz/unraid-templates/main/nestview/nestview.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/kylejschultz/unraid-templates/main/nestview/nestview-icon.png</Icon>
+  <ExtraSearchTerms>docker monitoring homelab containers health dashboard</ExtraSearchTerms>
+  <Config Name="Web UI Port" Target="8484" Default="8484" Mode="tcp" Description="Port to access the Nestview web interface." Type="Port" Display="always" Required="true" Mask="false">8484</Config>
+  <Config Name="AppData" Target="/config" Default="/mnt/user/appdata/nestview" Mode="rw" Description="Persistent storage for the Nestview database (SQLite) and configuration." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/nestview</Config>
+  <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="ro" Description="Read-only access to the Docker socket. Required for container autodiscovery and monitoring." Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
+</Container>

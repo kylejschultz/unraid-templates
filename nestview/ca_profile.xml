@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/kylejschultz/nestview/main/unraid/nestview-icon.png</Icon>
+  <Name>kylejschultz</Name>
+  <Description>Creator of Nestview — a self-hosted Docker visibility tool for homelabbers.</Description>
+  <GravatarEmail></GravatarEmail>
+  <Website>https://nestview.app</Website>
+  <Github>https://github.com/kylejschultz</Github>
+  <Discord>https://discord.gg/TfQ8QX3Ptr</Discord>
+</Maintainer>
