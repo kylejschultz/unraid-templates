@@ -2,6 +2,7 @@
 <Maintainer>
   <Icon>https://raw.githubusercontent.com/kylejschultz/nestview/main/unraid/nestview-icon.png</Icon>
   <Name>kylejschultz</Name>
+  <Profile>Homelab tinkerer. Building open-source tools for self-hosters.</Profile>
   <Description>Creator of Nestview — a self-hosted Docker visibility tool for homelabbers.</Description>
   <GravatarEmail></GravatarEmail>
   <Website>https://nestview.app</Website>
