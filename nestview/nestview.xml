@@ -21,5 +21,5 @@
   <ExtraSearchTerms>docker monitoring homelab containers health dashboard</ExtraSearchTerms>
   <Config Name="Web UI Port" Target="8484" Default="8484" Mode="tcp" Description="Port to access the Nestview web interface." Type="Port" Display="always" Required="true" Mask="false">8484</Config>
   <Config Name="AppData" Target="/config" Default="/mnt/user/appdata/nestview" Mode="rw" Description="Persistent storage for the Nestview database (SQLite) and configuration." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/nestview</Config>
-  <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="ro" Description="Read-only access to the Docker socket. Required for container autodiscovery and monitoring." Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Access to the Docker socket. Required for container autodiscovery, monitoring, and container restart functionality." Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
 </Container>
