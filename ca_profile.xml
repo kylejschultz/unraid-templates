@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Maintainer>
-  <Icon>https://raw.githubusercontent.com/kylejschultz/nestview/main/unraid/nestview-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/kylejschultz/unraid-templates/main/nestview/nestview-icon.png</Icon>
   <Name>kylejschultz</Name>
   <Profile>Homelab tinkerer. Building open-source tools for self-hosters.</Profile>
   <Description>Creator of Nestview — a self-hosted Docker visibility tool for homelabbers.</Description>
