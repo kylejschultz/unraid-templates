@@ -8,11 +8,10 @@
   <Support>https://forums.unraid.net/topic/198374-support-nestview-lightweight-docker-observability/</Support>
   <Project>https://github.com/kylejschultz/nestview</Project>
   <Overview>
-    Nestview is a lightweight, self-hosted Docker visibility and health tool for homelabbers. Zero-config autodiscovery of all running containers, a health dashboard, searchable log history, per-container CPU/memory/network stats, Discord alerting, and image update awareness — all from a single container with no manual service configuration required.[br][br]
+    Nestview is a lightweight, self-hosted Docker visibility and health tool for homelabbers. Zero-config autodiscovery of all running containers, a health dashboard, searchable log history, per-container CPU/memory/network stats, Discord alerting, and image update awareness, all from a single container with no manual service configuration required.[br][br]
     [b]Default port:[/b] 8484[br]
     [b]First run:[/b] A setup wizard will guide you through creating your admin account.[br][br]
     [b]Documentation:[/b] https://github.com/kylejschultz/nestview[br]
-    [b]Discord:[/b] https://discord.gg/TfQ8QX3Ptr
   </Overview>
   <Category>Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8484]</WebUI>
