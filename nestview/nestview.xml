@@ -15,7 +15,7 @@
     - [b]Discord:[/b] https://discord.gg/TfQ8QX3Ptr
   </Overview>
   <Category>Tools: Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:8484]</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/kylejschultz/unraid-templates/main/nestview/nestview.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/kylejschultz/unraid-templates/main/nestview/nestview-icon.png</Icon>
   <ExtraSearchTerms>docker monitoring homelab containers health dashboard</ExtraSearchTerms>
