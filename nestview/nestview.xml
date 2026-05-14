@@ -12,7 +12,7 @@
     - [b]Default port:[/b] 8484[br]
     - [b]First run:[/b] A setup wizard will guide you through creating your admin account.[br][br]
     - [b]Documentation:[/b] https://github.com/kylejschultz/nestview[br]
-    - [b]Discord:[/b] https://discord.gg/TfQ8QX3Ptr
+    - [b]Discord:[/b] https://discord.gg/UQAZ3bJ6
   </Overview>
   <Category>Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8484]</WebUI>
