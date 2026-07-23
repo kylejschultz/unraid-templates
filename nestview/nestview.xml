@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
   <Name>Nestview</Name>
-  <Repository>ghcr.io/kylejschultz/nestview:latest</Repository>
+  <Repository>ghcr.io/kylejschultz/nestview:1.5.0</Repository>
   <Registry>https://github.com/kylejschultz/nestview/pkgs/container/nestview</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
