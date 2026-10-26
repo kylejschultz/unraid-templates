@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Name>Cratekeep</Name>
+  <Repository>ghcr.io/kylejschultz/cratekeep:latest</Repository>
+  <Registry>https://github.com/kylejschultz/cratekeep/pkgs/container/cratekeep</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <!-- Replace with the Cratekeep Unraid forum support topic after it is created. -->
+  <Support>https://github.com/kylejschultz/cratekeep/issues</Support>
+  <Project>https://github.com/kylejschultz/cratekeep</Project>
+  <Overview>Cratekeep is a lightweight web interface for managing a beets music library. Review MusicBrainz matches, import music from an inbox, and edit metadata and file tags.[br][br]First run: select /data/inbox and /data/library in the setup screen. Configuration, databases, and the generated signing key persist in /data/config.[br][br]Imports move files from the inbox to the library and can write reviewed tags. Start with disposable copies. Both media mounts must be writable.[br][br]Cratekeep has no built-in authentication. Use a trusted network or an authenticating reverse proxy; do not expose it directly to the internet.</Overview>
+  <!-- Confirm category selection with the CA scanner before publication. -->
+  <Category>MediaApp:Music</Category>
+  <WebUI>http://[IP]:[PORT:8788]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/kylejschultz/unraid-templates/main/cratekeep/cratekeep.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/kylejschultz/unraid-templates/main/cratekeep/cratekeep-icon.png</Icon>
+  <ExtraSearchTerms>beets musicbrainz music library metadata tagging import</ExtraSearchTerms>
+  <Config Name="Web UI Port" Target="8788" Default="8788" Mode="tcp" Description="Host port for the Cratekeep web interface." Type="Port" Display="always" Required="true" Mask="false">8788</Config>
+  <Config Name="AppData" Target="/data/config" Default="/mnt/user/appdata/cratekeep" Mode="rw" Description="Persistent configuration, SQLite databases, beets configuration, and generated signing key." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/cratekeep</Config>
+  <Config Name="Inbox" Target="/data/inbox" Default="" Mode="rw" Description="Choose your incoming music folder. Imports move files out of this folder. Must be writable and separate from the Library folder; neither may contain the other." Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Library" Target="/data/library" Default="" Mode="rw" Description="Choose your destination music library. Cratekeep can move files here and write reviewed tags. Start with disposable copies. Must be writable and separate from Inbox." Type="Path" Display="always" Required="true" Mask="false"></Config>
+</Container>
