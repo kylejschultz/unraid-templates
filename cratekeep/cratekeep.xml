@@ -6,8 +6,7 @@
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <!-- Replace with the Cratekeep Unraid forum support topic after it is created. -->
-  <Support>https://github.com/kylejschultz/cratekeep/issues</Support>
+  <Support>https://forums.unraid.net/topic/201062-support-cratekeep-music-library-management-with-beets/</Support>
   <Project>https://github.com/kylejschultz/cratekeep</Project>
   <Overview>Cratekeep is a lightweight web interface for managing a beets music library. Review MusicBrainz matches, import music from an inbox, and edit metadata and file tags.[br][br]First run: select /data/inbox and /data/library in the setup screen. Configuration, databases, and the generated signing key persist in /data/config.[br][br]Imports move files from the inbox to the library and can write reviewed tags. Start with disposable copies. Both media mounts must be writable.[br][br]Cratekeep has no built-in authentication. Use a trusted network or an authenticating reverse proxy; do not expose it directly to the internet.</Overview>
   <!-- Confirm category selection with the CA scanner before publication. -->
